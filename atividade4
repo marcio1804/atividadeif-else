@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class VerificacaoMaiorNumero {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+      
+        System.out.print("Digite o primeiro numero inteiro: ");
+        int primeiroNumero = scanner.nextInt();
+
+        
+        System.out.print("Digite o segundo numero inteiro: ");
+        int segundoNumero = scanner.nextInt();
+
+        
+        int maiorNumero;
+        if (primeiroNumero > segundoNumero) {
+            maiorNumero = primeiroNumero;
+        } else if (segundoNumero > primeiroNumero) {
+            maiorNumero = segundoNumero;
+        } else {
+            System.out.println("Os numeros sao iguais.");
+            return;
+        }
+
+       System.out.println("O maior numero e: " + maiorNumero);
+
+        scanner.close();
+    }
+}
